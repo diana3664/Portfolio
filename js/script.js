@@ -6,10 +6,10 @@ jQuery(document).ready(function(){
         }else{
             jQuery('.navbar').removeClass("sticky");
         }
-          // toggle menu/navbar script
-          jQuery('.menu-btn').click(function(){
-            jQuery('.navbar .menu').toggleClass("active");
-            jQuery('.menu-btn i').toggleClass("active");
-    });
     })
+     // toggle menu/navbar script
+     jQuery('.menu-btn').click(function(){
+        jQuery('.navbar .menu').toggleClass("active");
+        jQuery('.menu-btn i').toggleClass("active");
+});
 });
