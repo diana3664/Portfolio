@@ -15,14 +15,14 @@ jQuery(document).ready(function(){
 
  // typing text animation script
  var typed = new Typed(".typing", {
-    strings: ["Programmer", "Developer", "Professional Software Developer", "Designer", "Freelancer"],
+    strings: ["Professional Software Developer", "Designer UI/UX", "Web Developer"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true
 });
 
 var typed = new Typed(".typing-2", {
-    strings: ["YouTuber", "Developer", "Blogger", "Designer", "Freelancer"],
+    strings: [ "Designer UI/UX", "Professional Software Developer","Web Developer"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true

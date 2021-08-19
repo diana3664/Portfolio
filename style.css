@@ -10,24 +10,32 @@ html{
     scroll-behavior: smooth;
 }
 
+
+/* custom scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* all  similar styling code*/
+section{
+    padding: 100px 0;
+}
 .max-width{
     max-width: 1300px;
     padding: 0 80px;
     margin: auto;
 }
-/* navbar styling */
-.navbar{
-    position: fixed;
-    width: 100%;
-    z-index: 999;   
-        padding: 30px 0;
-    font-family: 'Ubuntu', sans-serif;
-    transition: all 0.3s ease;
-}
-/* all  similar styling code*/
-section{
-    padding: 100px 0;
-}
+
 
 .about, .services, .skills, .teams, .contact, footer{
     font-family: 'Poppins', sans-serif;
@@ -71,7 +79,15 @@ section .title::after{
     background: #fff;
     transform: translateX(-50%);
 }
-
+/* navbar styling */
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999;   
+        padding: 30px 0;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+}
 /* class that brings the navbar to appear on scroll 'sticky ref=javascrpt */
 .navbar.sticky{
     padding: 15px 0;
@@ -294,6 +310,9 @@ section .title::after{
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
+.card22{
+    margin-top: 10px;
+}
 
 /* skills section styling */
 
@@ -453,7 +472,7 @@ section .title::after{
     margin: 10px 0;
 }
 .contact .contact-content .row{
-    display: flex;
+    display: inline-block;
     height: 65px;
     align-items: center;
 }
@@ -505,8 +524,8 @@ section .title::after{
 .contact .right form .textarea textarea{
   padding-top: 10px;
   resize: none;
-}
-.contact .right form .button-area{
+} */
+/* .contact .right form .button-area{
   display: flex;
   align-items: center;
 }
@@ -556,7 +575,7 @@ footer span a:hover{
 
 
 @media (max-width: 1104px) {
-    .home .about-content .left img{
+    .about .about-content .left img{
         height: 350px;
         width: 350px;
     }
